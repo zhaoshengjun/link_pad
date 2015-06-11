@@ -1,0 +1,28 @@
+{
+  "name": "Link Pad",
+  "description": "Override the new tab page with a blank one",
+  "version": "0.2",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "blank.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": [
+    "bookmarks",
+    "topSites",
+    "tabs",
+    "history",
+    "management",
+    "storage",
+    "unlimitedStorage",
+    "chrome://favicon/",
+    "\u003Call_urls>",
+    "contextMenus",
+    "notifications",
+    "alarms"
+  ],
+  "background": {
+    "scripts": ["js/contextMenu.js"]
+  },
+  "manifest_version": 2
+}

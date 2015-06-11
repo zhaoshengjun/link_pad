@@ -1,0 +1,230 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+}
+body{
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  background: url(../images/bg2.png) repeat;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  line-height: 1.33;
+  color: rgba(0,0,0,.8);
+  font-smoothing: antialiased;
+}
+/*container*/
+.container{
+  width: 90%;
+  margin: auto;
+}
+.container:before,
+.container:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.container:after {
+  clear: both;
+}
+.ui.dividing.header {
+  padding-bottom: .25rem;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  font-family: "Brandon Grotesque";
+  font-size: 2em;
+}
+.ui.card [class*="right floated"], .ui.cards>.card [class*="right floated"] {
+  float: right;
+}
+/*card*/
+.ui.card{
+  margin-top: 10px;
+  margin-right: 10px;
+  max-width: 300px;
+  float: left;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 290px;
+  min-height: 0;
+  background: #fafafa;
+  padding: 0;
+  border: none;
+  border-radius: .3857rem;
+  box-shadow: 0 3px 0 0 #d4d4d5,0 0 0 1px #d4d4d5;
+  -webkit-transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  z-index: '';
+}
+.ui.card>:first-child, .ui.cards>.card>:first-child {
+  border-radius: .2857rem .2857rem 0 0!important;
+}
+/*image*/
+.ui.card>.image, .ui.cards>.card>.image {
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+  padding: 0;
+  background: rgba(0,0,0,.05);
+}
+.ui.card>.image>img, .ui.cards>.card>.image>img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: .2857rem .2857rem 0 0;
+  border: none;
+}
+/*content*/
+.ui.card>.content, .ui.cards>.card>.content {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  background: 0 0;
+  margin: 0;
+  padding: 1em;
+  box-shadow: none;
+  font-size: 1em;
+  border: none;
+  border-radius: 0;
+}
+/*group header*/
+.group-header {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 40px;
+  padding-left: 8px;
+}
+/*header*/
+.ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui) {
+  font-weight: 700;
+  margin-top: -.165em;
+  line-height: 1.33em;
+  font-family: "Brandon Grotesque";
+  font-size: 2em;
+    text-decoration: none;
+}
+.ui.card>.content>a.header, .ui.cards>.card>.content>a.header {
+  color: rgba(0,0,0,.85);
+}
+/*meta*/
+.ui.card .meta, .ui.cards>.card .meta {
+  font-size: .9em;
+  color: rgba(0,0,0,.4);
+}
+/*description*/
+.ui.card>.content>.header+.description, .ui.card>.content>.meta+.description, .ui.cards>.card>.content>.header+.description, .ui.cards>.card>.content>.meta+.description {
+  margin-top: .5em;
+}
+/*extra*/
+.ui.card>.extra, .ui.cards>.card>.extra {
+  max-width: 100%;
+  min-height: 0!important;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  position: static;
+  background: 0 0;
+  width: auto;
+  margin: 0;
+  padding: .75em 1em;
+  top: 0;
+  left: 0;
+  color: rgba(0,0,0,.4);
+  box-shadow: none;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+  border-top: 1px solid rgba(0,0,0,.05);
+}
+/*button*/
+.ui.button {
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: 0;
+  border: none;
+  vertical-align: baseline;
+  background-color: #e0e0e0;
+  color: rgba(0,0,0,.6);
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  margin: 0 .25em 0 0;
+  padding: .78571em 1.5em;
+  text-transform: none;
+  text-shadow: none;
+  font-weight: 700;
+  line-height: 1;
+  font-style: normal;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-image: none;
+  border-radius: .2857rem;
+  box-shadow: 0 0 0 1px rgba(39,41,43,.15)!important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+  transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+  will-change: '';
+  -webkit-tap-highlight-color: transparent;
+}
+.ui.button:hover {
+  background-color: #e8e8e8;
+  background-image: none;
+  box-shadow: '';
+  color: rgba(0,0,0,.8);
+}
+/*icons*/
+i.icon {
+  display: inline-block;
+  opacity: 1;
+  margin: 0 .25rem 0 0;
+  width: 1.23em;
+  height: .9em;
+  /*font-family: Icons;*/
+  font-style: normal;
+  line-height: 1;
+  font-weight: 400;
+  text-decoration: inherit;
+  text-align: center;
+  speak: none;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.ui.card>.content .icon, .ui.cards>.card>.content .icon {
+  cursor: pointer;
+  opacity: .75;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+.ui.card>.content .icon:hover, .ui.cards>.card>.content .icon:hover {
+  opacity: 1;
+  color: #ff2733;
+}
+/*avatar*/
+.ui.card .avatar img, .ui.card img.avatar, .ui.cards>.card .avatar img, .ui.cards>.card img.avatar {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 500rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .25em;
+}
